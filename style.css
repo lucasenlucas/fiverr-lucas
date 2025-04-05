@@ -1,156 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Web Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f172a;
-  color: #f1f5f9;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content fade-in">
+      <h1>Upgrade Your Online Identity</h1>
+      <p>Experience a high-end one-page website, crafted to impress.</p>
+      <a href="#projects" class="btn-glow">View Projects</a>
+    </div>
+  </header>
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  <section class="projects fade-in-up" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Landing Page" />
+        <h3>Landing Page</h3>
+        <p>High-conversion layout with striking visuals.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Portfolio Site" />
+        <h3>Portfolio Site</h3>
+        <p>A polished online presence to showcase your skills.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Business Info" />
+        <h3>Business Page</h3>
+        <p>Clean, structured layout for modern companies.</p>
+      </div>
+    </div>
+  </section>
 
-.fade-in {
-  animation: fadeIn 1.2s ease-out;
-}
+  <footer class="fade-in">
+    <p>Follow me:</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <p class="copy">&copy; 2025 Premium Web by Lucas</p>
+  </footer>
 
-.fade-in-up {
-  animation: fadeIn 1.2s ease-out;
-}
-
-/* Hero section */
-.hero {
-  position: relative;
-  height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1602524813712-e59b1b804b2d?fit=crop&w=1950&q=80');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.8);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  color: #facc15;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #f1f5f9;
-}
-
-/* Glow Button */
-.btn-glow {
-  background: linear-gradient(to right, #facc15, #fde68a);
-  color: #0f172a;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  box-shadow: 0 0 15px #facc15;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-glow:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #fde68a;
-}
-
-/* Projects */
-.projects {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.projects h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #facc15;
-  margin-bottom: 40px;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.project-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  transition: 0.3s ease;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.project-card h3 {
-  color: #facc15;
-  margin-bottom: 10px;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  background-color: rgba(255, 255, 255, 0.08);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #0f172a;
-  border-top: 1px solid #334155;
-}
-
-.social-icons a {
-  color: #facc15;
-  margin: 0 10px;
-  font-size: 1.6rem;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: #fde68a;
-}
-
-.copy {
-  font-size: 0.9rem;
-  margin-top: 10px;
-  color: #64748b;
-}
+</body>
+</html>
